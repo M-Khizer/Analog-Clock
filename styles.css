@@ -1,0 +1,136 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dee1e7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clock{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: 20px solid #dee1e7;
+    background-color: #f1f1f1;
+    box-shadow:  2px 1px 10px rgb(151, 151, 151),
+                -3px -5px 20px white,
+                 1px 1px 7px  rgb(151, 151, 151) inset,
+                -3px -5px 20px white inset;
+}
+.circle{
+    position: absolute;
+    top: 7.2rem;
+    left: 7.2rem;
+    background-color: red;
+    border: 3px solid black;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+.numbers{
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+.twelve{
+    position: absolute;
+    top: .5rem;
+    left: 6.9rem;
+   
+}
+.six{
+    position: absolute;
+    top: 13rem;
+    left: 7.3rem;
+  
+}
+.nine{
+    position: absolute;
+    top: 7rem;
+    left: 1rem;
+}
+.three{
+    position: absolute;
+    top: 7rem;
+    right: 1rem;
+}
+.one{
+    position: absolute;
+    top: 1.3rem;
+    right: 4.5rem;
+}
+.two{
+    position: absolute;
+    top: 3.7rem;
+    right: 2.1rem;
+}
+.four{
+    position: absolute;
+    top: 10.3rem;
+    right: 2.1rem;
+}
+
+.five{
+    position: absolute;
+    top: 12.5rem;
+    right: 4.5rem;
+}
+
+.eleven{
+    position: absolute;
+    top: 1.5rem;
+    left: 4rem;
+}
+.ten{
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+}
+.eight{
+    position: absolute;
+    top: 10.3rem;
+    left: 2.1rem;
+}
+
+.seven{
+    position: absolute;
+    top: 12.5rem;
+    left: 4.5rem;
+}
+.hand {
+    position: absolute;
+    transform-origin: 50% 100%;
+    transition-timing-function: steps(2, end);
+}
+
+.hour-hand{
+    position: absolute;
+    top: 2.8rem;
+    left: 7.5rem;
+    width: 10px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50px;
+
+}
+
+.min-hand{
+    position: absolute;
+    top: 1.3rem;
+    left:7rem;
+    width: 7px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.sec-hand{
+    position: absolute;
+    top: .3rem;
+    left: 7.7rem;
+    width: 5px;
+    height: 120px;
+    background-color: red;
+    border-radius: 50px;
+}
